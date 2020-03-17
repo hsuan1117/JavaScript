@@ -3,7 +3,7 @@ class AdvanceNumber extends HLib {
     
   }
   get average() {
-    return this.data.clone().reduce((p,c)=>p+c)/this.data.length
+    return this.data.reduce((p,c)=>p+c)/this.data.length
   }
   constructor(data = [] , settings) {
     //存放計算的數組
