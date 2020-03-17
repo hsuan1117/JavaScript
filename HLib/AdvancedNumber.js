@@ -13,6 +13,6 @@ class AdvanceNumber extends HLib {
     super()
     //存放計算的數組
     this.data = data;
-    this.
+    this.data_sorted_s2l = data.sort()
   }
 }
