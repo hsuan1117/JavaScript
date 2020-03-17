@@ -6,10 +6,13 @@ class AdvanceNumber extends HLib {
   get average() {
     return this.data.reduce((p,c)=>p+=c,0)/this.data.length
   }
+  get me() {
+    
+  }
   constructor(data = [] , settings) {
     super()
     //存放計算的數組
     this.data = data;
-    
+    this.
   }
 }
