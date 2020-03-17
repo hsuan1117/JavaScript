@@ -1,6 +1,3 @@
-/* 
- *  依賴: Algorithm
- */
 class AdvanceNumber extends HLib {
   get sigma() {
     let _=this.average;
@@ -10,6 +7,7 @@ class AdvanceNumber extends HLib {
     return this.data.reduce((p,c)=>p+=c,0)/this.data.length
   }
   get me() {
+    /** @依賴: Algorithm **/
     let x = this.data,r=0
     x.sort(Algorithm.less)
     if(x.length%2 == 0){
