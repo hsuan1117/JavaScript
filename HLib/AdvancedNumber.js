@@ -1,3 +1,6 @@
+/* 
+ *  依賴: Algorithm
+ */
 class AdvanceNumber extends HLib {
   get sigma() {
     let _=this.average;
@@ -7,12 +10,13 @@ class AdvanceNumber extends HLib {
     return this.data.reduce((p,c)=>p+=c,0)/this.data.length
   }
   get me() {
+    let x = this.data
+    x.sort(Algorithm.less)
     
   }
   constructor(data = [] , settings) {
     super()
     //存放計算的數組
     this.data = data;
-    this.data_sorted_s2l = data.sort()
   }
 }
