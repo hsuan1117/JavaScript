@@ -1,8 +1,10 @@
 class AdvanceNumber extends HLib {
-  sigma() {
+  get sigma() {
     
   }
-  constructor() {
-  
+  constructor(data = [] , settings) {
+    //存放計算的數組
+    this.data = data;
+    
   }
 }
