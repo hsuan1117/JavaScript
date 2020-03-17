@@ -1,8 +1,7 @@
 class AdvanceNumber extends HLib {
   get sigma() {
     let _=this.average;
-    this.data.reduce((p,c)=>p+=(c-_)*(c-_))
-    
+    return this.data.reduce((p,c)=>p+=(c-_)*(c-_))
   }
   get average() {
     return this.data.reduce((p,c)=>p+=c)/this.data.length
