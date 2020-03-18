@@ -1,0 +1,3 @@
+class DOM extends HLib {
+
+}
