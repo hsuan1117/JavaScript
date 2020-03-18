@@ -6,6 +6,9 @@ class AdvanceNumber extends HLib {
   get average() {
     return this.data.reduce((p,c)=>p+=c,0)/this.data.length
   }
+  get sum() {
+    return this.data.reduce((p,c)=>p+=c,0)
+  }
   get me() {
     /** @依賴: Algorithm **/
     let x = this.data,r=0
